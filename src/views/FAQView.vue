@@ -1,8 +1,9 @@
 <script setup>
 // import RenderString from "../components/RenderString";
-import ItemFAQ from "../components/ItemFAQ.vue";
 import RenderString from "../components/RenderString.vue"
 import linkify from "vue-linkify"
+import { Head } from '@vueuse/head'
+import ItemSummaryDetails from "../components/ItemSummaryDetails.vue"
 
 
 </script>
@@ -32,33 +33,35 @@ import linkify from "vue-linkify"
     <!-- Doesn't work -->
     <!-- <div style="background-color:aqua;">
       <RenderString :text="htmlContent" />
-    </div> -->
+    </div>-->
 
     <br />
 
     <div class="faq_category" :key="key" v-for="(value, key) in qanda">
       <h2>{{ value[0] }}</h2>
-      <ItemFAQ :key="key1" v-for="(value1, key1) in value[1]">
+      <ItemSummaryDetails :key="key1" v-for="(value1, key1) in value[1]">
         <template #heading>{{ value1['q'] }}</template>
         <template #description>
           <span v-if="value1['a'].includes('[[')">
             {{ value1['a'].split('[[')[1] }}
-            <a v-if="value1['a'].includes('https://')" :href="value1['a'].split('[[')[0]" target="_blank">{{ value1['a'].split('[[')[2] }}</a>
+            <a
+              v-if="value1['a'].includes('https://')"
+              :href="value1['a'].split('[[')[0]"
+              target="_blank"
+            >{{ value1['a'].split('[[')[2] }}</a>
             <router-link v-else :to="value1['a'].split('[[')[0]">{{ value1['a'].split('[[')[2] }}</router-link>
             {{ value1['a'].split('[[')[3] }}
           </span>
-          <span v-else >{{ value1['a'] }}</span>
+          <span v-else>{{ value1['a'] }}</span>
         </template>
-      </ItemFAQ>
+      </ItemSummaryDetails>
     </div>
 
     <br />
   </div>
 </template>
 
-<style>
-@import "@/assets/base.css";
-</style>
+
 
 
 <script>
@@ -102,6 +105,12 @@ let generalQuestions = [
 
 let capabilityQuestions = [
   {
+    q: "Does AirSend reconnect to my devices when my phone connects to home wifi?", a: "guide[[Please see [[Troubleshooting guide[[."
+  },
+]
+
+let osSupportQuestions = [
+  {
     q: "Is the app coming to Mac?", a: "There is no plan to support Mac OS at this time."
   },
   {
@@ -112,22 +121,11 @@ let capabilityQuestions = [
   },
 
 ]
-let howToQuestions = [
-  {
-    q: "How do I connect a device?", a: "guide[[Please see [[Troubleshooting guide[[."
-  },
-  {
-    q: "How do I disconnect a device?", a: "guide[[Please see [[Troubleshooting guide[[."
-  },
-  {
-    q: "Can I disable AirSend from starting automatically?", a: "guide[[Please see [[Troubleshooting guide[[."
-  },
-  {
-    q: "Does AirSend reconnect to my devices when my phone connects to home wifi?", a: "guide[[Please see [[Troubleshooting guide[[."
-  },
 
 
-]
+
+
+
 
 let troubleshootingQuestions = [
   {
@@ -135,6 +133,12 @@ let troubleshootingQuestions = [
   },
   {
     q: "I can send messages from one device, but not from the other", a: "guide[[Please see [[Troubleshooting guide[[."
+  },
+  {
+    q: "I can't see the Android notification", a: "guide[[Please see [[Troubleshooting guide[[."
+  },
+  {
+    q: "Android app closes on its own", a: "guide[[Please see [[Troubleshooting guide[[."
   },
 ]
 
@@ -149,8 +153,8 @@ let securityQuestions = [
 
 let map = new Map();
 map.set('General', generalQuestions);
-map.set('Capabilities / OS support', capabilityQuestions);
-map.set('How-To', howToQuestions);
+map.set('Capabilities', capabilityQuestions);
+map.set('OS support', osSupportQuestions);
 map.set('Troubleshooting', troubleshootingQuestions);
 map.set('Security', securityQuestions);
 
@@ -164,12 +168,4 @@ export default {
   },
 }
 
-
-
 </script>
-
-<style>
-.faq_category {
-  margin-bottom: 2rem;
-}
-</style>

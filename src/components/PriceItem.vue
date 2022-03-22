@@ -38,7 +38,7 @@
 }
 
 .item i {
-  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .details {

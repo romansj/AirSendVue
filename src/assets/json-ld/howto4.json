@@ -1,0 +1,48 @@
+
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://example.com/1x1/photo.jpg"
+  },
+  "name": "How can I send a message only to one device in AirSend?",
+  "totalTime": "PT2M",
+  "video": {
+    "@type": "VideoObject",
+    "name": "Tie a Tie",
+    "description": "How to tie a four-in-hand knot.",
+    "thumbnailUrl": "https://example.com/photos/photo.jpg",
+    "contentUrl": "http://www.example.com/videos/123_600x400.mp4",
+    "embedUrl": "http://www.example.com/videoplayer?id=123",
+    "uploadDate": "2019-01-05T08:00:00+08:00",
+    "duration": "P1MT10S"
+  },
+  "step":[
+    {
+      "@type": "HowToStep",
+      "name": "Preparations",
+      "text": "Open AirSend app on your device",
+      "image": "https://example.com/1x1/step1.jpg",
+      "url": "https://example.com/tie#step1"
+    }, {
+      "@type": "HowToStep",
+      "name": "View selected devices",
+      "text": "In Messages section, under 'Select recipient' tap the selection box and pick 'Selected devices'.",
+      "image": "https://example.com/1x1/step2.jpg",
+      "url": "https://example.com/tie#step2"
+    }, {
+      "@type": "HowToStep",
+      "name": "Select desired device or multiple devices",
+      "text": "In the selection box you will be able to select one or many devices",
+      "image": "https://example.com/1x1/step3.jpg",
+      "url": "https://example.com/tie#step3"
+    }, {
+      "@type": "HowToStep",
+      "name": "Changing selection",
+      "text": "If you already have selected devices before, but would like to change the selection, tap the devices icon that shows to the right of selection box when 'Selected devices' is picked",
+      "image": "https://example.com/1x1/step4.jpg",
+      "url": "https://example.com/tie#step4"
+    }
+  ]
+}

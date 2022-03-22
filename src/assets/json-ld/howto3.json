@@ -1,0 +1,42 @@
+
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://example.com/1x1/photo.jpg"
+  },
+  "name": "How do I disable notifications on AirSend?",
+  "totalTime": "PT2M",
+  "video": {
+    "@type": "VideoObject",
+    "name": "How do I disable notifications on AirSend?",
+    "description": "Lorem ipsum",
+    "thumbnailUrl": "https://example.com/photos/photo.jpg",
+    "contentUrl": "http://www.example.com/videos/123_600x400.mp4",
+    "embedUrl": "http://www.example.com/videoplayer?id=123",
+    "uploadDate": "2019-01-05T08:00:00+08:00",
+    "duration": "P1MT10S"
+  },
+  "step":[
+    {
+      "@type": "HowToStep",
+      "name": "Preparations",
+      "text": "Open AirSend app on your device",
+      "image": "https://example.com/1x1/step1.jpg",
+      "url": "https://example.com/tie#step1"
+    }, {
+      "@type": "HowToStep",
+      "name": "Disable notifications",
+      "text": "Open Settings and toggle on/off the type of notifications you would like to receive",
+      "image": "https://example.com/1x1/step2.jpg",
+      "url": "https://example.com/tie#step2"
+    }, {
+      "@type": "HowToStep",
+      "name": "Messages after disabling notifications",
+      "text": "You will still receive messages even if you turn off the notifications",
+      "image": "https://example.com/1x1/step3.jpg",
+      "url": "https://example.com/tie#step3"
+    }
+  ]
+}

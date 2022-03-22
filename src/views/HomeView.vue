@@ -3,11 +3,25 @@ import ItemFeature from '../components/ItemFeature.vue';
 import IconQRCode from '../components/icons/IconQRCode.vue';
 import IconCastConnection from '../components/icons/IconCastConnection.vue';
 import IconLock from '../components/icons/IconLock.vue';
-
+import { Head } from '@vueuse/head'
 
 </script>
 
 <template>
+  <Head>
+    <title>AirSend</title>
+    <meta name="title" content="Download and install AirSend app for Android and Windows devices" />
+    <meta
+      name="description"
+      content="Download and install the latest version of AirSend app for Android and Windows devices on Google Play Store and Microsoft Store."
+    />
+    <meta
+      name="keywords"
+      content="airsend download, airsend install, airsend android, airsend windows, airsend app, clipboard sync, android, windows, share clipboard to mobile, download, easy clipboard sync"
+    />
+  </Head>
+
+
   <div>
     <section class="hero_text">
       <h1>Welcome!</h1>
@@ -80,6 +94,3 @@ import IconLock from '../components/icons/IconLock.vue';
   </div>
 </template>
 
-<style>
-@import "@/assets/base.css";
-</style>

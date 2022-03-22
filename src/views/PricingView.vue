@@ -8,9 +8,23 @@ import SupportIcon from "@/components/icons//IconSupport.vue";
 import WelcomeItem from "../components/WelcomeItem.vue";
 import IconBriefcase from "../components/icons/IconBriefcase.vue";
 import IconParty from "../components/icons/IconParty.vue";
+import { Head } from '@vueuse/head'
 </script>
 
 <template>
+  <Head>
+    <title>Pricing | AirSend</title>
+    <meta name="title" content="Download and install AirSend app for Android and Windows devices" />
+    <meta
+      name="description"
+      content="Download and install the latest version of AirSend app for Android and Windows devices on Google Play Store and Microsoft Store."
+    />
+    <meta
+      name="keywords"
+      content="airsend download, airsend install, airsend android, airsend windows, airsend app, clipboard sync, android, windows, share clipboard to mobile, download, easy clipboard sync"
+    />
+  </Head>
+
   <div>
     <section>
       <h1>It's powerful for free, and Pro when you need it to be.</h1>
@@ -48,6 +62,3 @@ import IconParty from "../components/icons/IconParty.vue";
   </div>
 </template>
 
-<style>
-@import "@/assets/base.css";
-</style>

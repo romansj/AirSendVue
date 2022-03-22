@@ -87,8 +87,3 @@ import IconLocation from "./icons/IconLocation.vue";
     completely automated clipboard synchronization
   </ItemFeature>
 </template>  
-
-<style lang="css" scoped>
-/* Features */
-
-</style>

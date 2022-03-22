@@ -1,10 +1,20 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { defineComponent, computed, reactive } from 'vue'
 import { useHead } from '@vueuse/head'
 
 </script>
 
+
+
 <template>
+  <!--
+AirSend rich preview snippet objects:
+  HowTo
+  $ FAQ
+  $ SoftwareApp
+  $ Video (or logo, but only video has microdata sample code) 
+  -->
+
 
   <header>
     <nav>
@@ -31,8 +41,7 @@ import { useHead } from '@vueuse/head'
 </template>
 
 <script>
-export default {
-  name: 'App',
+export default defineComponent({
   setup() {
     const siteData = reactive({
       title: `My website`,
@@ -50,7 +59,7 @@ export default {
       ],
     })
   },
-}
+})
 </script>
 
 <style>
@@ -97,6 +106,8 @@ h3 {
   color: var(--color-heading);
   /* background-color: aqua; */
   /* margin: 3rem 0 1rem 0; */
+  line-height: normal;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -109,6 +120,8 @@ h1 {
   filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(329deg)
     brightness(103%) contrast(101%);
 }
+
+
 
 header {
   max-height: 100vh;
@@ -162,7 +175,7 @@ nav a {
 
 a:hover {
   color: var(--color-accent);
-  background-color: hsla(0, 0%, 100%, 0.2);
+  /* background-color: hsla(0, 0%, 100%, 0.2); */
 }
 
 nav a:hover {
@@ -209,6 +222,10 @@ ol {
 .img_guide_s {
   max-width: 100%;
   max-height: 60vh;
+  margin-bottom: 2rem;
+}
+
+.faq_category {
   margin-bottom: 2rem;
 }
 
