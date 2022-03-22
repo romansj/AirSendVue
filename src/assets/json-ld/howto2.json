@@ -2,8 +2,7 @@
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How to disconnect a device?",
-  "totalTime": "PT2M",
-  "step":[
+  "step": [
     {
       "@type": "HowToStep",
       "name": "Step 1.",

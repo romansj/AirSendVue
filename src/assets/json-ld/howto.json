@@ -2,21 +2,23 @@
   "@context": "https://schema.org",
   "@type": "HowTo",
   "name": "How to connect to a device",
-  "totalTime": "PT2M",
-  "step":[
+  "step": [
     {
       "@type": "HowToStep",
       "name": "Preparations",
       "text": "You want to connect from device A to device B. Get ready both devices."
-    }, {
+    },
+    {
       "@type": "HowToStep",
       "name": "Device B",
       "text": "Open AirSend app, go to Connections section and swipe up or tap 'This device'."
-    }, {
+    },
+    {
       "@type": "HowToStep",
       "name": "Device A",
       "text": "Open AirSend app, go to Connections section and tap 'Connect'."
-    }, {
+    },
+    {
       "@type": "HowToStep",
       "name": "Last step",
       "text": "Scan the QR code or enter IP adress and port."
