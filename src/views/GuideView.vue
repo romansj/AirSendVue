@@ -22,6 +22,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
     <section>
       <h1>Guide</h1>
       <p>Here you can find a general testing guide as well as troubleshooting steps if you've run into a problem</p>
+      <br>
       <h2>Jump to:</h2>
       <div style="display:flex; flex-direction:column">
         <a href="#howto">How-to</a>
