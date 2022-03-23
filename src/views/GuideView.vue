@@ -217,32 +217,32 @@ let howToConnect = `
     {
       "@type": "HowToStep",
       "text": "Go to Connections page",
-      "image": "src/assets/images/how_to/section_connections.jpg"
+      "image": "/section_connections.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Tap 'Connect'",
-      "image": "src/assets/images/how_to/connect_device/2_button_connect.jpg"
+      "image": "/connect_device/2_button_connect.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "The connection dialog will be displayed. You can now scan the other device's QR code or enter IP address and port manually",
-      "image": "src/assets/images/how_to/connect_device/3_dialog_connect.jpg"
+      "image": "/connect_device/3_dialog_connect.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "On the second device, go to the Connections page as well and tap on 'This device'",
-      "image": "src/assets/images/how_to/connect_device/2_button_connect.jpg"
+      "image": "/connect_device/2_button_connect.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Now on the first device scan the QR code or enter IP adress and port.",
-      "image": "src/assets/images/how_to/connect_device/4_scanned_qr.jpg"
+      "image": "/connect_device/4_scanned_qr.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "All done, you're connected!",
-      "image": "src/assets/images/how_to/device_list.jpg"
+      "image": "/device_list.jpg"
     }
   ]
 }
@@ -257,17 +257,17 @@ let howToDisconnect =
     {
       "@type": "HowToStep",
       "text": "Go to Connections page",
-      "image": "src/assets/images/how_to/modify_notifications/section_settings.jpg"
+      "image": "/modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Long tap on the device",
-      "image": "src/assets/images/how_to/modify_notifications/2_notification_settings.jpg"
+      "image": "/modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "In the menu that appears tap Disconnect",
-      "image": "src/assets/images/how_to/modify_notifications/3_notification_toggled.jpg"
+      "image": "/modify_notifications/3_notification_toggled.jpg"
     }
   ]
 }  
@@ -283,22 +283,22 @@ let howToMessageOneDevice =
     {
       "@type": "HowToStep",
       "text": "Go to Messages page",
-      "image": "src/assets/images/how_to/message_one_device/0_messages_page.jpg"
+      "image": "/message_one_device/0_messages_page.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Under 'Select recipient' tap the selection box and pick 'Selected devices'",
-      "image": "src/assets/images/how_to/message_one_device/2_recipient_choice_selected.jpg"
+      "image": "/message_one_device/2_recipient_choice_selected.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "In the dialog that appears select one or many devices you would like to message. Tap 'Confirm' after you're done selecting",
-      "image": "src/assets/images/how_to/message_one_device/4_dialog_recipient_choice_checked.jpg"
+      "image": "/message_one_device/4_dialog_recipient_choice_checked.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Write and send your message",
-      "image": "src/assets/images/how_to/message_one_device/5_message_typed.jpg"
+      "image": "/message_one_device/5_message_typed.jpg"
     }
   ]
 }
@@ -313,17 +313,17 @@ let howToDisableNotifications =
     {
       "@type": "HowToStep",
       "text": "Open Settings",
-      "image": "src/assets/images/how_to/modify_notifications/section_settings.jpg"
+      "image": "/modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Scroll down to Notifications page",
-      "image": "src/assets/images/how_to/modify_notifications/2_notification_settings.jpg"
+      "image": "/modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Toggle on/off the type of notifications you would like to receive",
-      "image": "src/assets/images/how_to/modify_notifications/3_notification_toggled.jpg"
+      "image": "/modify_notifications/3_notification_toggled.jpg"
     }
   ]
 }
