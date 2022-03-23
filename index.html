@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KQL5X24');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="Author" content="CherryDev">
+  <meta name="google-site-verification" content="18FmXBK6X8B5nGbOo9oiqzKsP7mzeOpKrGysL3hZ3GE" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.67e8e118.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAvFJREFUWEftlkkorWEYx3+KLJTI2DEPCyTpSIaykqGMiQVZkJJyDIUyRiFljLKQaUEyJKWIhWSpDGWDiAVRlEyJJHqfuotruvd8Ofduzrv5zub93t/7e77n/xwL4JX/uCzMAGYDZgPfGXB1dSUkJITDw0OOjo6kWbOysvDy8qKzs/NHmvfbNuzr66O4uJilpSWSkpLkwLq6OgIDA8nNzTUtgJWVFaenp6yvr5OYmIibmxuXl5fEx8fj6OjI5OQkpaWl7OzsEBERQVtbmyagLw0kJyczNzeHv78/u7u7VFVV0d/fz+joKMHBwURFRfH8/CxQW1tbAqllfQkwNTVFZGQkzc3NVFZWcnV1RXR09AeA+vp6WltbtZwtez4FsLOz4+zsjIODA3kq5WFhYWKjoaHhNwNFRUUMDAz8LEBBQQFDQ0MEBASwv7+Pk5MT5+fnNDU14efnZ3oAZ2dnbG1tpf1+LR8fH56ennh5ecHa2pqTkxMxcnFxwc3Nzc8a0Pw2DRtNPo4tLS3F2MPDA6+vH/96fAmQnp5OYWEh9vb2bG5uYjAYNNwPsrOzmZiYwMHBQTrp/foUQNVWfXzT09OSgr6+vjQ2Nv47AL1eL7ceGRmhoqKC6+trOVxZ6erqwsbGhvb2drq7u9ne3pYgio2NFc0JCQnc399LUoaHh7O3tyehZZQBdVhHRwdlZWU8Pj5SU1PD+Pi4ZIJKRJUPyoxOp+P4+Jjl5WUBW1tbo7y8HBcXF0pKSgQmPz9fSmk0gIJwd3eXPIiLi0NF8+LioswHBaVWWloaGxsbMqB6enq4vb2lpaVFElRlR0xMDJmZmczMzBgHoEqQkZEhgygvL4+UlBSCgoJk8Kh5oEqjRvXq6qpofw+gckTdOicnR55qv1EGvL29GRwcxMPDQ4Kmt7eX2dlZUlNTqa2tlZCan5+nurpaSjE8PCy3XFhYYGxsjJWVFYH09PSU36GhoWLr7u7u77pA0+eucZPJg+hPXGYAswGzgTcMu20QDljSXQAAAABJRU5ErkJggg==">
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAT5JREFUOE/Nk72OgkAUhY8JEjsTFDtegcKShIB0NFRUBgIlBHrCA/ga9gYrY0HiC1D4EzpLKxo7CzFC2M1MsQlxDclu420mM7nz3XPunekB+MI/ovdZAJZlMR6PURQFptMpjsdjp7mWBdd1EUURRFFEEARYr9cYjUbI8/wtqAXYbre4XC5I0xS+72O/34OoiuO4GyAIApbLJZIkgaqqGA6HFLDZbHA4HLoB/X4fDMOgLEt6uWka1HWNqqro+i5aFmazGSaTCVar1dsL8/mcqiRgEj8Anuex2+0QhiHO5zNs26aJiqKA4zhqz3Eceq5pGlXaApCN53mwLAun0wmDwQDX6xWyLCPLMjyfT9zvd9ofwzBeAWT+i8WCWiCVJUmiVck4SRNvtxtM06T90XUdj8fjVUHnq/kl4cP+wl8sfAOlI4gB4ZBiRgAAAABJRU5ErkJggg==">
+  <link rel="manifest" href="data:application/manifest+json;base64,ew0KICAgICJuYW1lIjogIiIsDQogICAgInNob3J0X25hbWUiOiAiIiwNCiAgICAiaWNvbnMiOiBbDQogICAgICAgIHsNCiAgICAgICAgICAgICJzcmMiOiAiL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwNCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwNCiAgICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyINCiAgICAgICAgfSwNCiAgICAgICAgew0KICAgICAgICAgICAgInNyYyI6ICIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLA0KICAgICAgICAgICAgInNpemVzIjogIjUxMng1MTIiLA0KICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIg0KICAgICAgICB9DQogICAgXSwNCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsDQogICAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsDQogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSINCn0=">
+
+  <script type="module" crossorigin src="/assets/index.58192b92.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.271fe6a1.js">
+  <link rel="stylesheet" href="/assets/index.21c81cbe.css">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQL5X24" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="app"></div>
   
-    <!-- <title>Download and install AirSend app for Android and Windows devices</title>
-    <meta name="title" content="Download and install AirSend app for Android and Windows devices">
-    <meta name="description"
-      content="Download and install the latest version of AirSend app for Android and Windows devices on Google Play Store and Microsoft Store.">
-    <meta name="keywords"
-      content="airsend download, airsend install, airsend android, airsend windows, airsend app, clipboard sync, android, windows, share clipboard to mobile, download, easy clipboard sync"> -->
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="Author" content="CherryDev">
-  
-    <link rel="apple-touch-icon" sizes="180x180" href="/AirSendVue/assets/apple-touch-icon.67e8e118.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAvFJREFUWEftlkkorWEYx3+KLJTI2DEPCyTpSIaykqGMiQVZkJJyDIUyRiFljLKQaUEyJKWIhWSpDGWDiAVRlEyJJHqfuotruvd8Ofduzrv5zub93t/7e77n/xwL4JX/uCzMAGYDZgPfGXB1dSUkJITDw0OOjo6kWbOysvDy8qKzs/NHmvfbNuzr66O4uJilpSWSkpLkwLq6OgIDA8nNzTUtgJWVFaenp6yvr5OYmIibmxuXl5fEx8fj6OjI5OQkpaWl7OzsEBERQVtbmyagLw0kJyczNzeHv78/u7u7VFVV0d/fz+joKMHBwURFRfH8/CxQW1tbAqllfQkwNTVFZGQkzc3NVFZWcnV1RXR09AeA+vp6WltbtZwtez4FsLOz4+zsjIODA3kq5WFhYWKjoaHhNwNFRUUMDAz8LEBBQQFDQ0MEBASwv7+Pk5MT5+fnNDU14efnZ3oAZ2dnbG1tpf1+LR8fH56ennh5ecHa2pqTkxMxcnFxwc3Nzc8a0Pw2DRtNPo4tLS3F2MPDA6+vH/96fAmQnp5OYWEh9vb2bG5uYjAYNNwPsrOzmZiYwMHBQTrp/foUQNVWfXzT09OSgr6+vjQ2Nv47AL1eL7ceGRmhoqKC6+trOVxZ6erqwsbGhvb2drq7u9ne3pYgio2NFc0JCQnc399LUoaHh7O3tyehZZQBdVhHRwdlZWU8Pj5SU1PD+Pi4ZIJKRJUPyoxOp+P4+Jjl5WUBW1tbo7y8HBcXF0pKSgQmPz9fSmk0gIJwd3eXPIiLi0NF8+LioswHBaVWWloaGxsbMqB6enq4vb2lpaVFElRlR0xMDJmZmczMzBgHoEqQkZEhgygvL4+UlBSCgoJk8Kh5oEqjRvXq6qpofw+gckTdOicnR55qv1EGvL29GRwcxMPDQ4Kmt7eX2dlZUlNTqa2tlZCan5+nurpaSjE8PCy3XFhYYGxsjJWVFYH09PSU36GhoWLr7u7u77pA0+eucZPJg+hPXGYAswGzgTcMu20QDljSXQAAAABJRU5ErkJggg==">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAT5JREFUOE/Nk72OgkAUhY8JEjsTFDtegcKShIB0NFRUBgIlBHrCA/ga9gYrY0HiC1D4EzpLKxo7CzFC2M1MsQlxDclu420mM7nz3XPunekB+MI/ovdZAJZlMR6PURQFptMpjsdjp7mWBdd1EUURRFFEEARYr9cYjUbI8/wtqAXYbre4XC5I0xS+72O/34OoiuO4GyAIApbLJZIkgaqqGA6HFLDZbHA4HLoB/X4fDMOgLEt6uWka1HWNqqro+i5aFmazGSaTCVar1dsL8/mcqiRgEj8Anuex2+0QhiHO5zNs26aJiqKA4zhqz3Eceq5pGlXaApCN53mwLAun0wmDwQDX6xWyLCPLMjyfT9zvd9ofwzBeAWT+i8WCWiCVJUmiVck4SRNvtxtM06T90XUdj8fjVUHnq/kl4cP+wl8sfAOlI4gB4ZBiRgAAAABJRU5ErkJggg==">
-    <link rel="manifest" href="data:application/manifest+json;base64,ew0KICAgICJuYW1lIjogIiIsDQogICAgInNob3J0X25hbWUiOiAiIiwNCiAgICAiaWNvbnMiOiBbDQogICAgICAgIHsNCiAgICAgICAgICAgICJzcmMiOiAiL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwNCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwNCiAgICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyINCiAgICAgICAgfSwNCiAgICAgICAgew0KICAgICAgICAgICAgInNyYyI6ICIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLA0KICAgICAgICAgICAgInNpemVzIjogIjUxMng1MTIiLA0KICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIg0KICAgICAgICB9DQogICAgXSwNCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsDQogICAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsDQogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSINCn0=">
-  
-    <!-- <title>Vite App</title> -->
-    <script type="module" crossorigin src="/AirSendVue/assets/index.d45d5847.js"></script>
-    <link rel="modulepreload" href="/AirSendVue/assets/vendor.076e7d39.js">
-    <link rel="stylesheet" href="/AirSendVue/assets/index.21c81cbe.css">
-  </head>
-  <body>
-    <div id="app"></div>
-    
-  </body>
+</body>
+
 </html>
