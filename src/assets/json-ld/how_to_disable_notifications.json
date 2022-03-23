@@ -5,18 +5,18 @@
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Preparations",
-      "text": "Open AirSend app on your device"
+      "text": "Open Settings",
+      "image": "modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Disable notifications",
-      "text": "Open Settings and toggle on/off the type of notifications you would like to receive"
+      "text": "Scroll down to Notifications page",
+      "image": "modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Messages after disabling notifications",
-      "text": "You will still receive messages even if you turn off the notifications"
+      "text": "Toggle on/off the type of notifications you would like to receive",
+      "image": "modify_notifications/3_notification_toggled.jpg"
     }
   ]
 }

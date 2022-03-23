@@ -17,7 +17,6 @@
     "interactionType": { "@type": "WatchAction" },
     "userInteractionCount": 10
   },
-  "regionsAllowed": "LV,SE",
   "hasPart": [
     {
       "@type": "Clip",

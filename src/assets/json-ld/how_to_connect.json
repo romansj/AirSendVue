@@ -5,27 +5,33 @@
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Preparations",
-      "text": "You want to connect from device A to device B. Get both devices ready.",
-      "image": "https://example.com/1x1/photo.jpg"
+      "text": "Go to Connections page",
+      "image": "section_connections.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Device B",
-      "text": "Open AirSend app, go to Connections section and swipe up or tap 'This device'.",
-      "image": "https://example.com/1x1/photo.jpg"
+      "text": "Tap 'Connect'",
+      "image": "connect_device/2_button_connect.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Device A",
-      "text": "Open AirSend app, go to Connections section and tap 'Connect'.",
-      "image": "https://example.com/1x1/photo.jpg"
+      "text": "The connection dialog will be displayed. You can now scan the other device's QR code or enter IP address and port manually",
+      "image": "connect_device/3_dialog_connect.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Last step",
-      "text": "Scan the QR code or enter IP adress and port.",
-      "image": "https://example.com/1x1/photo.jpg"
+      "text": "On the second device, go to the Connections page as well and tap on 'This device'",
+      "image": "connect_device/2_button_connect.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Now on the first device scan the QR code or enter IP adress and port.",
+      "image": "connect_device/4_scanned_qr.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "All done, you're connected!",
+      "image": "device_list.jpg"
     }
   ]
 }

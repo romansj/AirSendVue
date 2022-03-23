@@ -1,22 +1,22 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to disconnect a device?",
+  "name": "How to disconnect a device",
   "step": [
     {
       "@type": "HowToStep",
-      "name": "Step 1.",
-      "text": "Go to Connections section."
+      "text": "Go to Connections page",
+      "image": "modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Step 2.",
-      "text": "Long tap on the device."
+      "text": "Long tap on the device",
+      "image": "modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "name": "Step 3.",
-      "text": "In the menu that appears tap Disconnect."
+      "text": "In the menu that appears tap Disconnect",
+      "image": "modify_notifications/3_notification_toggled.jpg"
     }
   ]
-}
+}  
