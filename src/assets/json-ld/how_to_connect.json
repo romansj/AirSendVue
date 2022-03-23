@@ -6,7 +6,7 @@
     {
       "@type": "HowToStep",
       "name": "Preparations",
-      "text": "You want to connect from device A to device B. Get ready both devices.",
+      "text": "You want to connect from device A to device B. Get both devices ready.",
       "image": "https://example.com/1x1/photo.jpg"
     },
     {

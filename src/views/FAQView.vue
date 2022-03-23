@@ -1,7 +1,6 @@
 <script setup>
 // import RenderString from "../components/RenderString";
 import RenderString from "../components/RenderString.vue"
-import linkify from "vue-linkify"
 import { Head } from '@vueuse/head'
 import ItemSummaryDetails from "../components/ItemSummaryDetails.vue"
 
@@ -30,11 +29,34 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue"
       <p>Frequently asked questions</p>
     </section>
 
-    <!-- Doesn't work -->
-    <!-- <div style="background-color:aqua;">
-      <RenderString :text="htmlContent" />
-    </div>-->
+    <br />
 
+    <section>
+      <div class="faq_category" v-for="value in faqAll">
+        <h3>{{ value.name }}</h3>
+        <ItemSummaryDetails v-for="value1 in value.mainEntity">
+          <template #heading>
+            <b>{{ value1.name }}</b>
+          </template>
+          <template #description>
+            <p v-html="value1.acceptedAnswer.text"></p>
+          </template>
+        </ItemSummaryDetails>
+      </div>
+    </section>
+    <br />
+
+    <!-- <section>
+
+      <ItemSummaryDetails v-for="value in faq.mainEntity">
+        <template #heading>
+          <b>{{ value.name }}</b>
+        </template>
+        <template #description>
+          <p v-html="value.acceptedAnswer.text"></p>
+        </template>
+      </ItemSummaryDetails>
+    </section>
     <br />
 
     <div class="faq_category" :key="key" v-for="(value, key) in qanda">
@@ -57,7 +79,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue"
       </ItemSummaryDetails>
     </div>
 
-    <br />
+    <br />-->
   </div>
 </template>
 
@@ -158,12 +180,308 @@ map.set('OS support', osSupportQuestions);
 map.set('Troubleshooting', troubleshootingQuestions);
 map.set('Security', securityQuestions);
 
+
+let faqSt =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Frequently Asked Questions",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I download AirSend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can download AirSend on the <a href='https://airsend.dedumets.com/downloads' target='_blank'>Downloads page</a>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why don't you have an exe installer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend you use the Microsoft Store app, which is the same exe file, but verified so you know it is safe. However, if you are using Windows 7, you can download the exe file <a href='https://airsend.dedumets.com/releases' target='_blank'>here</a>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AirSend free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.dedumets.com/pricing' target='_blank'>Pricing</a> for more details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does AirSend reconnect to my devices when my phone connects to home wifi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AirSend reconnects to saved devices when network connection is reestablished."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the app coming to Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no plan to support Mac OS at this time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the app coming to iOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no plan to support iOS at this time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you going to support Bluetooth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bluetooth is planned and in the works. Stay tuned!"
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "I can't connect to another device",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "I can send messages from one device, but not from the other",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "I can't see the Android notification",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "Android app closes on its own",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "Is my data safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your data is encrypted and visible only to you."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "What encryption standard do you use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AES-256"
+      }
+    }
+  ]
+}
+`
+
+let faqGeneral =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "General",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I download AirSend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can download AirSend on the <a href='https://airsend.dedumets.com/downloads' target='_blank'>Downloads page</a>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why don't you have an exe installer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recommend you use the Microsoft Store app, which is the same exe file, but verified so you know it is safe. However, if you are using Windows 7, you can download the exe file <a href='https://airsend.dedumets.com/releases' target='_blank'>here</a>"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AirSend free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.dedumets.com/pricing' target='_blank'>Pricing</a> for more details."
+      }
+    }
+  ]
+}
+`
+
+let faqOSSupport =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Operating System Support",
+  "mainEntity": [
+
+    {
+      "@type": "Question",
+      "name": "Is the app coming to Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no plan to support Mac OS at this time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the app coming to iOS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no plan to support iOS at this time."
+      }
+    }
+
+  ]
+}
+`
+let faqCapabilties =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Capabilities",
+  "mainEntity": [
+
+    {
+      "@type": "Question",
+      "name": "Does AirSend reconnect to my devices when my phone connects to home wifi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AirSend reconnects to saved devices when network connection is reestablished."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you going to support Bluetooth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bluetooth is planned and in the works. Stay tuned!"
+      }
+    }
+
+
+  ]
+}
+`
+let faqTroubleshooting =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Troubleshooting",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "I can't connect to another device",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "I can send messages from one device, but not from the other",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "I can't see the Android notification",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "Android app closes on its own",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+      }
+    }
+
+
+  ]
+}
+`
+let faqSecurity =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": "Security",
+  "mainEntity": [
+    
+    {
+      "@type": "Question",
+      "name": "Is my data safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your data is encrypted and visible only to you."
+      }
+    }
+    ,
+    {
+      "@type": "Question",
+      "name": "What encryption standard do you use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AES-256"
+      }
+    }
+
+
+  ]
+}
+`
+
+let faqParsed = JSON.parse(faqSt)
+let faqAllParsed = [JSON.parse(faqGeneral), JSON.parse(faqOSSupport), JSON.parse(faqCapabilties), JSON.parse(faqTroubleshooting), JSON.parse(faqSecurity)]
+
 export default {
   data() {
     return {
       qanda: map,
-      htmlContent: `<router-link :to='downloads'>Downloads</router-link>`
-
+      faq: faqParsed,
+      faqAll: faqAllParsed
     }
   },
 }

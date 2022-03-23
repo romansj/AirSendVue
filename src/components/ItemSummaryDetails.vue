@@ -1,17 +1,5 @@
 <template>
-  <!-- <div class="item">
-    <div class="details">
-      <h4 class="heading">
-        <slot name="heading"></slot>
-      </h4>
-
-      <p>
-        <slot name="description"></slot>
-      </p>
-    </div>
-  </div>-->
-
-  <details class="item">
+  <details class="item" open>
     <summary>
       <slot name="heading"></slot>
     </summary>
@@ -26,11 +14,26 @@
 <style scoped>
 .item {
   border-radius: 15px;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.5rem 0rem;
 
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+summary{
+  padding-left: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .item{
+      padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  summary{
+  padding-left: 0;
+}
 }
 
 h4 {
@@ -41,9 +44,7 @@ h4 {
   color: var(--color-accent);
 }
 
-.item {
-  margin-bottom: 1rem;
-}
+
 
 .details {
   flex: 1;

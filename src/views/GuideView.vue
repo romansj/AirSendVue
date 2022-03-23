@@ -22,7 +22,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
     <section>
       <h1>Guide</h1>
       <p>Here you can find a general testing guide as well as troubleshooting steps if you've run into a problem</p>
-      <br>
+      <br />
       <h2>Jump to:</h2>
       <div style="display:flex; flex-direction:column">
         <a href="#howto">How-to</a>
@@ -33,6 +33,27 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
     <br />
 
     <section>
+      <h2 id="howto">How-to guide</h2>
+      <!-- <div class="faq_category" v-for="value in howToItems"> -->
+      <!-- <h3>{{value.name}}</h3> -->
+      <ItemSummaryDetails v-for="value in howToItems">
+        <template #heading>
+          <b>{{ value.name }}</b>
+        </template>
+        <template #description>
+          <span v-for="value2 in value.step">
+            <p v-html="value2.text"></p>
+            <img class="img_guide_phone" :src="value2.image" />
+            <br />
+            <br />
+          </span>
+        </template>
+      </ItemSummaryDetails>
+      <!-- </div> -->
+    </section>
+    <br>
+
+    <!-- <section>
       <h2 id="howto">How-to guide</h2>
       <div class="faq_category" :key="key" v-for="(value, key) in howToList">
         <h3>{{ value[0] }}</h3>
@@ -50,13 +71,12 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
               {{ value1['a'].split('[[')[3] }}
             </span>
             <span v-else v-html="value1['a']"></span>
-            <!-- {{ value1['a'] }} -->
           </template>
         </ItemSummaryDetails>
       </div>
     </section>
 
-    <br />
+    <br />-->
 
     <section>
       <h2 id="testing">Testing guide</h2>
@@ -107,7 +127,25 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
   </div>
 </template>
 
+<style scoped>
+.img_guide_phone{
+width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .img_guide_phone{
+width: 20rem;
+  }
+}
+</style>
+
 <script>
+
+
+
+
+
+
 
 let connectionQuestions = [
   {
@@ -169,10 +207,136 @@ map.set('Messaging', messagingQuestions);
 map.set('Devices', deviceQuestions);
 map.set('Other', otherQuestions);
 
+
+let howToConnect = `
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to connect to a device",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "text": "Go to Connections page",
+      "image": "src/assets/images/how_to/section_connections.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Tap 'Connect'",
+      "image": "src/assets/images/how_to/connect_device/2_button_connect.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "The connection dialog will be displayed. You can now scan the other device's QR code or enter IP address and port manually",
+      "image": "src/assets/images/how_to/connect_device/3_dialog_connect.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "On the second device, go to the Connections page as well and tap on 'This device'",
+      "image": "src/assets/images/how_to/connect_device/2_button_connect.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Now on the first device scan the QR code or enter IP adress and port.",
+      "image": "src/assets/images/how_to/connect_device/4_scanned_qr.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "All done, you're connected!",
+      "image": "src/assets/images/how_to/device_list.jpg"
+    }
+  ]
+}
+`
+let howToDisconnect =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to disconnect a device?",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "text": "Go to Connections page",
+      "image": "src/assets/images/how_to/modify_notifications/section_settings.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Long tap on the device",
+      "image": "src/assets/images/how_to/modify_notifications/2_notification_settings.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the menu that appears tap Disconnect",
+      "image": "src/assets/images/how_to/modify_notifications/3_notification_toggled.jpg"
+    }
+  ]
+}  
+`
+
+let howToMessageOneDevice =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How can I send a message to only one device?",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "text": "Go to Messages page",
+      "image": "src/assets/images/how_to/message_one_device/0_messages_page.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Under 'Select recipient' tap the selection box and pick 'Selected devices'",
+      "image": "src/assets/images/how_to/message_one_device/2_recipient_choice_selected.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the dialog that appears select one or many devices you would like to message. Tap 'Confirm' after you're done selecting",
+      "image": "src/assets/images/how_to/message_one_device/4_dialog_recipient_choice_checked.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Write and send your message",
+      "image": "src/assets/images/how_to/message_one_device/5_message_typed.jpg"
+    }
+  ]
+}
+`
+let howToDisableNotifications =
+  `
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How do I disable notifications on AirSend?",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "text": "Open Settings",
+      "image": "src/assets/images/how_to/modify_notifications/section_settings.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Scroll down to Notifications page",
+      "image": "src/assets/images/how_to/modify_notifications/2_notification_settings.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Toggle on/off the type of notifications you would like to receive",
+      "image": "src/assets/images/how_to/modify_notifications/3_notification_toggled.jpg"
+    }
+  ]
+}
+
+`
+
+let arr = [JSON.parse(howToConnect), JSON.parse(howToDisconnect), JSON.parse(howToMessageOneDevice), JSON.parse(howToDisableNotifications)]
+
 export default {
   data() {
     return {
       howToList: map,
+      howToItems: arr
     }
   },
 }
