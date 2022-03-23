@@ -6,9 +6,10 @@
   "operatingSystem": "Windows 10",
   "applicationCategory": "DesktopEnhancementApplication",
   "downloadUrl": "https://www.microsoft.com/en-us/p/airsendwindows/9n80mlcvwf33",
-  "memoryRequirements": "170MB",
+  "memoryRequirements": "60MB",
   "screenshot": "https://store-images.s-microsoft.com/image/apps.35278.14059117892807582.2791acbd-d71e-424b-bf76-967f7fec3f74.5286d269-5a74-4a5c-bc2d-a392aa362ed8?w=1399&h=1109&q=90&format=jpg",
   "softwareVersion": "1.0.8",
+  "storageRequirements":"170MB",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.6",

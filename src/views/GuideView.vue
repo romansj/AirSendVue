@@ -143,10 +143,6 @@ width: 20rem;
 
 
 
-
-
-
-
 let connectionQuestions = [
   {
     q: "How to connect to a device?", a: `You want to connect from device A to device B.<br><br>
@@ -185,19 +181,16 @@ let otherQuestions = [
   {
     q: "How do I disable battery optimization?", a: "Open Settings and under 'Disable battery optimization' tap 'Disable' and follow the on screen prompts"
   },
-
 ]
 let deviceQuestions = [
   {
     q: "How do I rename a device?", a: "You are on device A, you see device B and you want to rename it. Open Settings on device B and set the name for the device. You will need to reconnect to see the change on device B"
   },
-
 ]
 let messagingQuestions = [
   {
     q: "How can I send a message only to one device?", a: "In Messages section, under 'Select recipient' tap the selection box and pick 'Selected devices'. You will be able to select one or many devices. If you already have selected devices before, but would like to change the selection, tap the devices icon that shows to the right of selection box when 'Selected devices' is picked"
   },
-
 ]
 
 
@@ -217,32 +210,32 @@ let howToConnect = `
     {
       "@type": "HowToStep",
       "text": "Go to Connections page",
-      "image": "/section_connections.jpg"
+      "image": "section_connections.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Tap 'Connect'",
-      "image": "/connect_device/2_button_connect.jpg"
+      "image": "connect_device/2_button_connect.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "The connection dialog will be displayed. You can now scan the other device's QR code or enter IP address and port manually",
-      "image": "/connect_device/3_dialog_connect.jpg"
+      "image": "connect_device/3_dialog_connect.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "On the second device, go to the Connections page as well and tap on 'This device'",
-      "image": "/connect_device/2_button_connect.jpg"
+      "image": "connect_device/2_button_connect.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Now on the first device scan the QR code or enter IP adress and port.",
-      "image": "/connect_device/4_scanned_qr.jpg"
+      "image": "connect_device/4_scanned_qr.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "All done, you're connected!",
-      "image": "/device_list.jpg"
+      "image": "device_list.jpg"
     }
   ]
 }
@@ -257,17 +250,17 @@ let howToDisconnect =
     {
       "@type": "HowToStep",
       "text": "Go to Connections page",
-      "image": "/modify_notifications/section_settings.jpg"
+      "image": "modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Long tap on the device",
-      "image": "/modify_notifications/2_notification_settings.jpg"
+      "image": "modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "In the menu that appears tap Disconnect",
-      "image": "/modify_notifications/3_notification_toggled.jpg"
+      "image": "modify_notifications/3_notification_toggled.jpg"
     }
   ]
 }  
@@ -283,22 +276,22 @@ let howToMessageOneDevice =
     {
       "@type": "HowToStep",
       "text": "Go to Messages page",
-      "image": "/message_one_device/0_messages_page.jpg"
+      "image": "message_one_device/0_messages_page.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Under 'Select recipient' tap the selection box and pick 'Selected devices'",
-      "image": "/message_one_device/2_recipient_choice_selected.jpg"
+      "image": "message_one_device/2_recipient_choice_selected.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "In the dialog that appears select one or many devices you would like to message. Tap 'Confirm' after you're done selecting",
-      "image": "/message_one_device/4_dialog_recipient_choice_checked.jpg"
+      "image": "message_one_device/4_dialog_recipient_choice_checked.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Write and send your message",
-      "image": "/message_one_device/5_message_typed.jpg"
+      "image": "message_one_device/5_message_typed.jpg"
     }
   ]
 }
@@ -313,17 +306,17 @@ let howToDisableNotifications =
     {
       "@type": "HowToStep",
       "text": "Open Settings",
-      "image": "/modify_notifications/section_settings.jpg"
+      "image": "modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Scroll down to Notifications page",
-      "image": "/modify_notifications/2_notification_settings.jpg"
+      "image": "modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
       "text": "Toggle on/off the type of notifications you would like to receive",
-      "image": "/modify_notifications/3_notification_toggled.jpg"
+      "image": "modify_notifications/3_notification_toggled.jpg"
     }
   ]
 }

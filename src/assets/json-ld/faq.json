@@ -1,7 +1,7 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "name": "Frequently Asked Questions",
+  "name": "General",
   "mainEntity": [
     {
       "@type": "Question",
@@ -26,15 +26,8 @@
         "@type": "Answer",
         "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.dedumets.com/pricing' target='_blank'>Pricing</a> for more details."
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Does AirSend reconnect to my devices when my phone connects to home wifi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. AirSend reconnects to saved devices when network connection is reestablished."
-      }
-    },
+    }, 
+
     {
       "@type": "Question",
       "name": "Is the app coming to Mac?",
@@ -51,6 +44,15 @@
         "text": "There is no plan to support iOS at this time."
       }
     },
+
+    {
+      "@type": "Question",
+      "name": "Does AirSend reconnect to my devices when my phone connects to home wifi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AirSend reconnects to saved devices when network connection is reestablished."
+      }
+    },
     {
       "@type": "Question",
       "name": "Are you going to support Bluetooth?",
@@ -58,8 +60,8 @@
         "@type": "Answer",
         "text": "Bluetooth is planned and in the works. Stay tuned!"
       }
-    }
-    ,
+    },
+
     {
       "@type": "Question",
       "name": "I can't connect to another device",
@@ -94,8 +96,8 @@
         "@type": "Answer",
         "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
       }
-    }
-    ,
+    },
+
     {
       "@type": "Question",
       "name": "Is my data safe?",
@@ -113,5 +115,7 @@
         "text": "AES-256"
       }
     }
+
+
   ]
 }
