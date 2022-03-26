@@ -25,9 +25,20 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
       <br />
       <h2>Jump to:</h2>
       <div style="display:flex; flex-direction:column">
-        <a href="#howto">How-to</a>
-        <a href="#testing">Testing</a>
-        <a href="#troubleshooting">Troubleshooting</a>
+        <ul>
+          <li><a href="#howto">How-to</a></li>
+
+          <ul>
+            <li><a href="/guide/how-to-connect">How to connect to a device?</a></li>
+            <li><a href="/guide/how-to-disconnect">How to disconnect a device?</a></li>
+            <li><a href="/guide/how-to-message-one-device">How can I send a message to only one device?</a></li>
+            <li><a href="/guide/how-to-disable-notifications">How do I disable notifications on AirSend?</a></li>
+          </ul>
+
+        <li><a href="#testing">Testing</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+      </ul>
+
       </div>
     </section>
     <br />
@@ -51,7 +62,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
       </ItemSummaryDetails>
       <!-- </div> -->
     </section>
-    <br>
+    <br />
 
     <!-- <section>
       <h2 id="howto">How-to guide</h2>
@@ -128,13 +139,17 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
 </template>
 
 <style scoped>
-.img_guide_phone{
-width: 100%;
+
+ul{
+  list-style: none;
+}
+.img_guide_phone {
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .img_guide_phone{
-width: 20rem;
+  .img_guide_phone {
+    width: 20rem;
   }
 }
 </style>

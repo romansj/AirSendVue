@@ -214,6 +214,8 @@ ol {
   padding-left: 0;
 }
 
+
+
 .img_guide {
   width: 100%;
   margin-bottom: 2rem;

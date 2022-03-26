@@ -20,49 +20,51 @@ const router = createRouter({
     {
       path: "/features",
       name: "features",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/FeaturesView.vue"),
     },
     {
       path: "/pricing",
       name: "pricing",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/PricingView.vue"),
     },
     {
       path: "/downloads",
       name: "downloads",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/DownloadsView.vue"),
     },
     {
       path: "/guide",
       name: "guide",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/GuideView.vue"),
+    },
+    {
+      path: "/guide/how-to-connect",
+      name: "how-to-connect",
+      component: () => import("../views/GuideConnectView.vue"),
+    },
+    {
+      path: "/guide/how-to-disconnect",
+      name: "how-to-disconnect",
+      component: () => import("../views/GuideDisconnectView.vue"),
+    },
+    {
+      path: "/guide/how-to-message-one-device",
+      name: "how-to-message-one-device",
+      component: () => import("../views/GuideMessageOneView.vue"),
+    },
+    {
+      path: "/guide/how-to-disable-notifications",
+      name: "how-to-disable-notifications",
+      component: () => import("../views/GuideNotificationsView.vue"),
     },
     {
       path: "/faq",
       name: "faq",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/FAQView.vue"),
     },
     {
       path: "/legal",
       name: "legal",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/LegalView.vue"),
     },
 
@@ -70,9 +72,6 @@ const router = createRouter({
     {
       path: "/privacy",
       name: "privacy",
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import("../views/PrivacyView.vue"),
     },
     { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import("../views/404View.vue") },
