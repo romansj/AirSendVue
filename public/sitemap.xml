@@ -27,7 +27,27 @@
   </url>
   <url>
     <loc>https://airsend.dedumets.com/guide</loc>
-    <lastmod>2022-03-19T17:13:43+00:00</lastmod>
+    <lastmod>2022-03-26T17:35:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://airsend.dedumets.com/guide/how-to-connect</loc>
+    <lastmod>2022-03-26T17:35:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://airsend.dedumets.com/guide/how-to-disconnect</loc>
+    <lastmod>2022-03-26T17:35:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://airsend.dedumets.com/guide/how-to-message-one-device</loc>
+    <lastmod>2022-03-26T17:35:00+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://airsend.dedumets.com/guide/how-to-disable-notifications</loc>
+    <lastmod>2022-03-26T17:35:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
