@@ -6,15 +6,15 @@ import ItemSummaryDetails from '../components/ItemSummaryDetails.vue';
 
 <template>
   <Head>
-    <title>Guide | AirSend</title>
-    <meta name="title" content="Download and install AirSend app for Android and Windows devices" />
+    <title>How to disconnect a device? | AirSend</title>
+    <meta name="title" content="How to disconnect a device? | AirSend" />
     <meta
       name="description"
-      content="Download and install the latest version of AirSend app for Android and Windows devices on Google Play Store and Microsoft Store."
+      content="Guide how to disconnect a device in AirSend app."
     />
     <meta
       name="keywords"
-      content="airsend download, airsend install, airsend android, airsend windows, airsend app, clipboard sync, android, windows, share clipboard to mobile, download, easy clipboard sync"
+      content="guide, airsend, airsend guide, disconnect, disconnect device"
     />
   </Head>
 
