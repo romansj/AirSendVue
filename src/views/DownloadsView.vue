@@ -34,7 +34,7 @@ import IconParty from "../components/icons/IconParty.vue";
           <template #icon>
             <img
               class="img_guide_phone"
-              src="android.png"
+              src="/android.png"
               style="height: 55px"
             />
           </template>
@@ -53,7 +53,7 @@ import IconParty from "../components/icons/IconParty.vue";
           <template #icon>
             <img
               class="img_guide_phone"
-              src="windows.png"
+              src="/windows.png"
               style="height: 55px"
             />
           </template>
@@ -112,7 +112,7 @@ import IconParty from "../components/icons/IconParty.vue";
           other devices. Click 'Yes' at the bottom of the prompt.
         </li>
 
-        <img class="img_guide" src="certificate_warning.png" />
+        <img class="img_guide" src="/certificate_warning.png" />
 
         <li>
           Next you will see a Windows Security Alert. Click 'Allow access' with
@@ -120,7 +120,7 @@ import IconParty from "../components/icons/IconParty.vue";
           network to send messages to your other devices.
         </li>
 
-        <img class="img_guide" src="firewall_prompt.png" />
+        <img class="img_guide" src="/firewall_prompt.png" />
 
         <p class="emphasis">
           If you are often using a public network (cafe, work), then please also
