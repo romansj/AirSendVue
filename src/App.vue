@@ -24,7 +24,7 @@ AirSend rich preview snippet objects:
       <RouterLink to="/pricing">Pricing</RouterLink>
       <RouterLink to="/downloads">Downloads</RouterLink>
       <RouterLink to="/guide">Guide</RouterLink>
-      <RouterLink to="/faq">FAQ</RouterLink>
+      <!-- <RouterLink to="/faq">FAQ</RouterLink> -->
     </nav>
   </header>
 

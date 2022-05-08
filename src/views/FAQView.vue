@@ -193,7 +193,7 @@ let faqSt =
       "name": "Where can I download AirSend?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can download AirSend on the <a href='https://airsend.dedumets.com/downloads' target='_blank'>Downloads page</a>"
+        "text": "You can download AirSend on the <a href='https://airsend.vercel.app/downloads' target='_blank'>Downloads page</a>"
       }
     },
     {
@@ -201,7 +201,7 @@ let faqSt =
       "name": "Why don't you have an exe installer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend you use the Microsoft Store app, which is the same exe file, but verified so you know it is safe. However, if you are using Windows 7, you can download the exe file <a href='https://airsend.dedumets.com/releases' target='_blank'>here</a>"
+        "text": "We recommend you use the Microsoft Store app, which is the same exe file, but verified so you know it is safe. However, if you are using Windows 7, you can download the exe file <a href='https://airsend.vercel.app/releases' target='_blank'>here</a>"
       }
     },
     {
@@ -209,7 +209,7 @@ let faqSt =
       "name": "Is AirSend free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.dedumets.com/pricing' target='_blank'>Pricing</a> for more details."
+        "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.vercel.app/pricing' target='_blank'>Pricing</a> for more details."
       }
     },
     {
@@ -250,7 +250,7 @@ let faqSt =
       "name": "I can't connect to another device",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -259,7 +259,7 @@ let faqSt =
       "name": "I can send messages from one device, but not from the other",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -268,7 +268,7 @@ let faqSt =
       "name": "I can't see the Android notification",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -277,7 +277,7 @@ let faqSt =
       "name": "Android app closes on its own",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -314,7 +314,7 @@ let faqGeneral =
       "name": "Where can I download AirSend?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can download AirSend on the <a href='https://airsend.dedumets.com/downloads' target='_blank'>Downloads page</a>"
+        "text": "You can download AirSend on the <a href='https://airsend.vercel.app/downloads' target='_blank'>Downloads page</a>"
       }
     },
     {
@@ -322,7 +322,7 @@ let faqGeneral =
       "name": "Why don't you have an exe installer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We recommend you use the Microsoft Store app, which is the same exe file, but verified so you know it is safe. However, if you are using Windows 7, you can download the exe file <a href='https://airsend.dedumets.com/releases' target='_blank'>here</a>"
+        "text": "We recommend you use the Microsoft Store app, which is the same exe file, but verified so you know it is safe. However, if you are using Windows 7, you can download the exe file <a href='https://airsend.vercel.app/releases' target='_blank'>here</a>"
       }
     },
     {
@@ -330,7 +330,7 @@ let faqGeneral =
       "name": "Is AirSend free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.dedumets.com/pricing' target='_blank'>Pricing</a> for more details."
+        "text": "AirSend is free to use. If you require more functionality, a paid Pro version is available. See <a href='https://airsend.vercel.app/pricing' target='_blank'>Pricing</a> for more details."
       }
     }
   ]
@@ -407,7 +407,7 @@ let faqTroubleshooting =
       "name": "I can't connect to another device",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -416,7 +416,7 @@ let faqTroubleshooting =
       "name": "I can send messages from one device, but not from the other",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -425,7 +425,7 @@ let faqTroubleshooting =
       "name": "I can't see the Android notification",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
     ,
@@ -434,7 +434,7 @@ let faqTroubleshooting =
       "name": "Android app closes on its own",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Please see <a href='https://airsend.dedumets.com/guide' target='_blank'>Troubleshooting guide</a>."
+        "text": "Please see <a href='https://airsend.vercel.app/guide' target='_blank'>Troubleshooting guide</a>."
       }
     }
 
