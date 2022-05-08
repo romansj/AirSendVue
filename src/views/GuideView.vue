@@ -22,7 +22,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
     <section>
       <h1>Guide</h1>
       <p>Here you can find a general testing guide as well as troubleshooting steps if you've run into a problem</p>
-      <br />
+      <!-- <br />
       <h2>Jump to:</h2>
       <div style="display:flex; flex-direction:column">
         <ul>
@@ -37,9 +37,9 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
 
         <li><a href="#testing">Testing</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
-      </ul>
+      </ul> -->
 
-      </div>
+      <!-- </div> -->
     </section>
     <br />
 
