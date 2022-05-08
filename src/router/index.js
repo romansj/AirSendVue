@@ -74,6 +74,7 @@ const router = createRouter({
       name: "privacy",
       component: () => import("../views/PrivacyView.vue"),
     },
+
     { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import("../views/404View.vue") },
     // if you omit the last `*`, the `/` character in params will be encoded when resolving or pushing
     { path: '/:pathMatch(.*)', name: 'bad-not-found', component: () => import("../views/404View.vue") },
