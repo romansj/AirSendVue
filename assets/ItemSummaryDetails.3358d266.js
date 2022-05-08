@@ -1,0 +1,1 @@
+import{_ as a}from"./index.d2f66814.js";import{o as r,b as o,e as s,h as t}from"./vendor.5ed81439.js";const n={},_={class:"item",open:""},c={class:"details"};function d(e,i){return r(),o("details",_,[s("summary",null,[t(e.$slots,"heading",{},void 0,!0)]),s("p",c,[t(e.$slots,"description",{},void 0,!0)])])}var u=a(n,[["render",d],["__scopeId","data-v-150cb93b"]]);export{u as I};
