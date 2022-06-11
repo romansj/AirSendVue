@@ -1,4 +1,10 @@
 # AirSendVue
+AirSend allows easy clipboard (or any other content!) sharing between Android and Windows devices.
+
+Please see Contributing section on how to contribute and please follow the Code of Conduct.
+
+
+# Running
 
 This template should help get you started developing with Vue 3 in Vite.
 
