@@ -105,6 +105,7 @@ import IconParty from "../components/icons/IconParty.vue";
         <li>Extract the downloaded .zip file</li>
         <li>Double click the AirSendWPF.exe file</li>
         <p class="emphasis">If you are asked to install a .NET runtime, please do so. Otherwise you will not be able to launch the app.</p>
+         <img class="img_guide" style="max-width:450px;"  src="/net_runtime.png" />
         <br>
         <li>
           You will get a Security Warning prompt asking you to install a
@@ -112,7 +113,7 @@ import IconParty from "../components/icons/IconParty.vue";
           other devices. Click 'Yes' at the bottom of the prompt.
         </li>
 
-        <img class="img_guide" src="/certificate_warning.png" />
+        <img class="img_guide" style="max-width:500px;" src="/certificate_warning.png" />
 
         <li>
           Next you will see a Windows Security Alert. Click 'Allow access' with
@@ -120,7 +121,7 @@ import IconParty from "../components/icons/IconParty.vue";
           network to send messages to your other devices.
         </li>
 
-        <img class="img_guide" src="/firewall_prompt.png" />
+        <img class="img_guide" style="max-width:600px;"  src="/firewall_prompt.png" />
 
         <p class="emphasis">
           If you are often using a public network (cafe, work), then please also

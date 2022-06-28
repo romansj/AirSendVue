@@ -58,6 +58,11 @@ const router = createRouter({
       component: () => import("../views/GuideNotificationsView.vue"),
     },
     {
+      path: "/guide/how-to-disable-battery-optimization",
+      name: "how-to-disable-battery-optimization",
+      component: () => import("../views/GuideBatteryOptimization.vue"),
+    },
+    {
       path: "/faq",
       name: "faq",
       component: () => import("../views/FAQView.vue"),
@@ -80,6 +85,9 @@ const router = createRouter({
     { path: '/:pathMatch(.*)', name: 'bad-not-found', component: () => import("../views/404View.vue") },
 
   ],
+  scrollBehavior () {
+    document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+  }
 });
 
 export default router;
