@@ -1,5 +1,5 @@
 <template>
-  <details class="item" open>
+  <details class="item">
     <summary>
       <slot name="heading"></slot>
     </summary>

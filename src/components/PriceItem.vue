@@ -22,6 +22,7 @@
 
 <style scoped>
 .item {
+
   border-radius: 15px;
   padding: 1rem;
 
@@ -33,7 +34,9 @@
 
 @media (hover: hover) {
   .item:hover {
-    background-color: var(--color-accent);
+    
+    /* border: 2px solid var(--color-accent); */
+    /* background-color: var(--color-accent); */
   }
 }
 

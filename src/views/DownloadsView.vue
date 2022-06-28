@@ -44,7 +44,7 @@ import IconParty from "../components/icons/IconParty.vue";
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.cherrydev.airsend"
               title="Download AirSend for Windows from the Play Store"
-              >Download from the Play Store</a
+              >Download from Play Store</a
             ></template
           >
         </PriceItem>
