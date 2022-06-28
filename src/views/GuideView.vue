@@ -22,24 +22,25 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
     <section>
       <h1>Guide</h1>
       <p>Here you can find a general testing guide as well as troubleshooting steps if you've run into a problem</p>
-      <!-- <br />
+      <br />
       <h2>Jump to:</h2>
       <div style="display:flex; flex-direction:column">
         <ul>
           <li><a href="#howto">How-to</a></li>
 
           <ul>
-            <li><a href="/guide/how-to-connect">How to connect to a device?</a></li>
-            <li><a href="/guide/how-to-disconnect">How to disconnect a device?</a></li>
-            <li><a href="/guide/how-to-message-one-device">How can I send a message to only one device?</a></li>
-            <li><a href="/guide/how-to-disable-notifications">How do I disable notifications on AirSend?</a></li>
+            <li><router-link to="/guide/how-to-connect">How to connect to a device?</router-link></li>
+            <li><router-link to="/guide/how-to-disconnect">How to disconnect a device?</router-link></li>
+            <li><router-link to="/guide/how-to-message-one-device">How can I send a message to only one device?</router-link></li>
+            <li><router-link to="/guide/how-to-disable-notifications">How do I disable notifications on AirSend?</router-link></li>
+            <li><router-link to="/guide/how-to-disable-battery-optimization">How to disable battery optimization?</router-link></li>
           </ul>
 
         <li><a href="#testing">Testing</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
-      </ul> -->
+      </ul>
+      </div>
 
-      <!-- </div> -->
     </section>
     <br />
 
@@ -103,7 +104,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
       <br />
       <p>
         Get started testing by
-        <router-link to="downloads" title="Download AirSend for your device">downloading Airsend</router-link>today!
+        <router-link to="downloads" title="Download AirSend for your device">downloading Airsend</router-link> today!
       </p>
     </section>
     <br />

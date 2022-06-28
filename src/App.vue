@@ -3,8 +3,6 @@ import { defineComponent, computed, reactive } from "vue";
 import { useHead } from "@vueuse/head";
 </script>
 
-
-
 <template>
   <!--
 AirSend rich preview snippet objects:
@@ -15,7 +13,7 @@ AirSend rich preview snippet objects:
   -->
 
   <header>
-        <nav role="navigation">
+    <nav role="navigation">
       <div id="menuToggle">
         <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
         <div id="menuToggleDiv">
@@ -39,9 +37,6 @@ AirSend rich preview snippet objects:
         </ul>
       </div>
     </nav>
-
-
-
   </header>
 
   <div class="content">
@@ -57,7 +52,7 @@ AirSend rich preview snippet objects:
 </template>
 
 <script>
-import {sleep, noscript} from "./utils.js"; 
+import {sleep, noscript} from "./utils.js";
 
 function getWordCount() {
   // let body = top.document.body;
