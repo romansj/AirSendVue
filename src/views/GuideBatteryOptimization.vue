@@ -48,7 +48,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
             <a href="https://dontkillmyapp.com/">https://dontkillmyapp.com/</a>
           </p>
           <br />
-          <span class="video_list">
+          <!-- <span class="video_list">
             <p>Navigate to your phone's app settings</p>
             <video loop="true" autoplay="true" controls width="250">
               <source
@@ -105,7 +105,7 @@ import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
 
             <br />
             <br />
-          </span>
+          </span> -->
         </template>
       </ItemSummaryDetails>
     </section>
