@@ -6,11 +6,11 @@ import { useHead } from "@vueuse/head";
 <template>
   <!--
 AirSend rich preview snippet objects:
-  HowTo
-  $ FAQ
-  $ SoftwareApp
-  $ Video (or logo, but only video has microdata sample code) 
-  -->
+    HowTo
+    $ FAQ
+    $ SoftwareApp
+    $ Video (or logo, but only video has microdata sample code) 
+    -->
 
   <header>
     <nav role="navigation">
@@ -28,12 +28,22 @@ AirSend rich preview snippet objects:
 
         <!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic. -->
         <ul id="menu" class="menuClosed">
-          <li><RouterLink to="/">Home</RouterLink></li>
-          <li><RouterLink to="/about">About</RouterLink></li>
-          <li><RouterLink to="/features">Features</RouterLink></li>
-          <li><RouterLink to="/pricing">Pricing</RouterLink></li>
-          <li><RouterLink to="/downloads">Downloads</RouterLink></li>
-          <li><RouterLink to="/guide">Guide</RouterLink></li>
+          <li>
+            <RouterLink to="/">Home</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="about">About</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="features">Features</RouterLink>
+          </li>
+          <!-- <li><RouterLink to="/pricing">Pricing</RouterLink></li> -->
+          <li>
+            <RouterLink to="downloads">Downloads</RouterLink>
+          </li>
+          <li>
+            <RouterLink to="guide">Guide</RouterLink>
+          </li>
         </ul>
       </div>
     </nav>
@@ -44,29 +54,20 @@ AirSend rich preview snippet objects:
   </div>
 
   <footer>
-    <router-link to="privacy">Privacy Policy</router-link>
-    <router-link to="legal">Terms & Conditions</router-link>
+    <p>All trademarks belong to their respective owners.</p>
     <br />
-    <p>Copyright 2022 CherryDev</p>
+    <p>iOS® is a registered trademark of Cisco in the US and is used by Apple under license.</p>
+    <br />
+    <p>Windows is a registered trademark of Microsoft Corporation in the United States and/or other countries.</p>
+    <br />
+    <RouterLink to="privacy">Privacy Policy</RouterLink>
+    <br />
+    <p>Copyright 2023 <a href="https://github.com/acherrydev" target="_blank" rel="noopener noreferrer">CherryDev</a></p>
   </footer>
 </template>
 
 <script>
-import {sleep, noscript} from "./utils.js";
-
-function getWordCount() {
-  // let body = top.document.body;
-  let body = document.getElementById("router_container");
-  if (body) {
-    let content =
-      document.body["innerText" in document.body ? "innerText" : "textContent"];
-    content = noscript(content);
-    let wordCount = content.match(/\S+/g).length;
-    wordCount -= 18; // remove header and footer content (LV)
-    return wordCount;
-  }
-  return -1;
-}
+import { sleep, noscript } from "./utils.js";
 
 export default defineComponent({
   setup() {
@@ -89,8 +90,6 @@ export default defineComponent({
   data() {
     return {
       message: false,
-
-      wordCount: -1,
     };
   },
 
@@ -105,9 +104,6 @@ export default defineComponent({
 
       this.updateMenuToggle(false);
       // react to route changes...
-
-      // delay for all content to load
-      this.requestUpdateWordCount();
     },
   },
 
@@ -135,19 +131,12 @@ export default defineComponent({
       // console.log("isOpen" + isOpen);
       this.message = isOpen;
     },
-
-    async requestUpdateWordCount() {
-      await sleep(300);
-      this.wordCount = getWordCount();
-    },
   },
 
   computed: {},
 });
 </script>
 
-<style>
-@import "@/assets/base.css";
+<style>@import "@/assets/base.css";
 @import "@/assets/layout.css";
-@import "@/assets/menu.css";
-</style>
+@import "@/assets/menu.css";</style>

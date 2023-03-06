@@ -1,20 +1,19 @@
 <script setup>
 import { Head } from '@vueuse/head'
-import ItemSummaryDetails from '../components/ItemSummaryDetails.vue';
 
 </script>
 
 <template>
   <Head>
-    <title>How to connect to a device? | AirSend</title>
-    <meta name="title" content="How to connect to a device? | AirSend" />
+    <title>How can I send a message to only one device? | AirSend</title>
+    <meta name="title" content="How can I send a message to only one device? | AirSend" />
     <meta
       name="description"
-      content="Guide how to connect to a device in AirSend app."
+      content="Guide how to send a message to only one device in AirSend."
     />
     <meta
       name="keywords"
-      content="guide, airsend, airsend guide, connect, connect device"
+      content="guide, airsend, airsend guide, message device"
     />
   </Head>
 
@@ -65,49 +64,39 @@ width: 20rem;
 <script>
 
 
-
-let howToConnect = `
+let howToMessageOneDevice =
+  `
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to connect to a device",
+  "name": "How can I send a message to only one device?",
   "step": [
     {
       "@type": "HowToStep",
-      "text": "Go to Connections page",
-      "image": "/section_connections.jpg"
+      "text": "Go to Messages page",
+      "image": "/message_one_device/0_messages_page.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "Tap 'Connect'",
-      "image": "/connect_device/2_button_connect.jpg"
+      "text": "Under 'Select recipient' tap the selection box and pick 'Selected devices'",
+      "image": "/message_one_device/2_recipient_choice_selected.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "The connection dialog will be displayed. You can now scan the other device's QR code or enter IP address and port manually",
-      "image": "/connect_device/3_dialog_connect.jpg"
+      "text": "In the dialog that appears select one or many devices you would like to message. Tap 'Confirm' after you're done selecting",
+      "image": "/message_one_device/4_dialog_recipient_choice_checked.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "On the second device, go to the Connections page as well and tap on 'This device'",
-      "image": "/connect_device/2_button_connect.jpg"
-    },
-    {
-      "@type": "HowToStep",
-      "text": "Now on the first device scan the QR code or enter IP adress and port.",
-      "image": "/connect_device/4_scanned_qr.jpg"
-    },
-    {
-      "@type": "HowToStep",
-      "text": "All done, you're connected!",
-      "image": "/device_list.jpg"
+      "text": "Write and send your message",
+      "image": "/message_one_device/5_message_typed.jpg"
     }
   ]
 }
 `
 
 
-let arr = [JSON.parse(howToConnect)]
+let arr = [JSON.parse(howToMessageOneDevice)]
 
 export default {
   data() {

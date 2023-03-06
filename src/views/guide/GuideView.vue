@@ -1,6 +1,5 @@
 <script setup>
 import { Head } from '@vueuse/head'
-import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
 
 </script>
 
@@ -152,6 +151,10 @@ ul{
   .img_guide_phone {
     width: 20rem;
   }
+}
+
+p{
+  text-align: justify;
 }
 </style>
 
