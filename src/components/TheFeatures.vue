@@ -18,12 +18,15 @@ import IconLocation from "./icons/IconLocation.vue";
 </script>
 
 <template>
+  <div class="features">
+
+  
   <ItemFeature>
     <template #icon>
       <IconQRCode />
     </template>
     <template #heading>Easy setup</template>
-    Get started just by scanning the QR code to connect to a device
+    Get started just by scanning the QR code to connect to a device.
   </ItemFeature>
 
   <ItemFeature>
@@ -32,7 +35,7 @@ import IconLocation from "./icons/IconLocation.vue";
     </template>
     <template #heading>Multiple device support</template>
     Connect up to 5 devices at the same time and have them all in sync. You copy text and it's
-    instantly available on all your connected devices
+    instantly available on all your connected devices.
   </ItemFeature>
 
   <ItemFeature>
@@ -41,7 +44,7 @@ import IconLocation from "./icons/IconLocation.vue";
     </template>
     <template #heading>Instant-syncing, cross-platform</template>
     Not only can you connect to many devices at the same time, but you can use any Windows and any
-    Android device with an Internet connection
+    Android device with an Internet connection.
   </ItemFeature>
 
   <ItemFeature>
@@ -58,7 +61,7 @@ import IconLocation from "./icons/IconLocation.vue";
       <IconSpeed />
     </template>
     <template #heading>Speed</template>
-    Your connected devices receive sent messages with virtually no delay
+    Your connected devices receive sent messages with virtually no delay.
   </ItemFeature>
 
   <ItemFeature>
@@ -66,7 +69,7 @@ import IconLocation from "./icons/IconLocation.vue";
       <IconLock />
     </template>
     <template #heading>Security</template>
-    The content you send is encrypted, so only you can see it
+    The content you send is encrypted, so only you can see it.
   </ItemFeature>
 
   <ItemFeature>
@@ -83,7 +86,15 @@ import IconLocation from "./icons/IconLocation.vue";
       <IconLocation />
     </template>
     <template #heading>It's only the beginning</template>
-    Huge features are planned in the long-run: image & file transmission, Bluetooth connectivity &
-    completely automated clipboard synchronization
+    Many features are planned in the long-run: image & file transmission, Bluetooth connectivity &
+    completely automated clipboard synchronization.
   </ItemFeature>
+</div>
 </template>  
+
+
+<style scoped lang="css">
+.features{
+  display: grid;
+}
+</style>

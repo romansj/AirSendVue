@@ -1,8 +1,5 @@
 <script setup>
 import { Head } from "@vueuse/head";
-import PriceItem from "@/components/PriceItem.vue";
-import IconBriefcase from "../components/icons/IconBriefcase.vue";
-import IconParty from "../components/icons/IconParty.vue";
 </script>
 
 <template>
@@ -230,4 +227,6 @@ import IconParty from "../components/icons/IconParty.vue";
     width: 20rem;
   }
 }
+
+
 </style>

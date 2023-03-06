@@ -1,8 +1,5 @@
 <script setup>
-// import RenderString from "../components/RenderString";
-import RenderString from "../components/RenderString.vue"
 import { Head } from '@vueuse/head'
-import ItemSummaryDetails from "../components/ItemSummaryDetails.vue"
 
 
 </script>

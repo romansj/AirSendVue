@@ -1,20 +1,19 @@
 <script setup>
 import { Head } from '@vueuse/head'
-import ItemSummaryDetails from '../components/ItemSummaryDetails.vue';
 
 </script>
 
 <template>
   <Head>
-    <title>How to disconnect a device? | AirSend</title>
-    <meta name="title" content="How to disconnect a device? | AirSend" />
+    <title>How to disable AirSend app notifications? | AirSend</title>
+    <meta name="title" content="How to disable AirSend app notifications? | AirSend" />
     <meta
       name="description"
-      content="Guide how to disconnect a device in AirSend app."
+      content="Guide how to disable AirSend app notifications"
     />
     <meta
       name="keywords"
-      content="guide, airsend, airsend guide, disconnect, disconnect device"
+      content="guide, airsend, airsend guide, notifications, airsend notifications"
     />
   </Head>
 
@@ -66,34 +65,34 @@ width: 20rem;
 
 
 
-let howToDisconnect =
+let howToDisableNotifications =
   `
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to disconnect a device?",
+  "name": "How do I disable notifications on AirSend?",
   "step": [
     {
       "@type": "HowToStep",
-      "text": "Go to Connections page",
+      "text": "Open Settings",
       "image": "/modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "Long tap on the device",
+      "text": "Scroll down to Notifications page",
       "image": "/modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "In the menu that appears tap Disconnect",
+      "text": "Toggle on/off the type of notifications you would like to receive",
       "image": "/modify_notifications/3_notification_toggled.jpg"
     }
   ]
-}  
+}
+
 `
 
-
-let arr = [JSON.parse(howToDisconnect)]
+let arr = [JSON.parse(howToDisableNotifications)]
 
 export default {
   data() {

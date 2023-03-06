@@ -22,11 +22,13 @@ const router = createRouter({
       name: "features",
       component: () => import("../views/FeaturesView.vue"),
     },
+    /*
     {
       path: "/pricing",
       name: "pricing",
       component: () => import("../views/PricingView.vue"),
     },
+    */
     {
       path: "/downloads",
       name: "downloads",
@@ -35,54 +37,49 @@ const router = createRouter({
     {
       path: "/guide",
       name: "guide",
-      component: () => import("../views/GuideView.vue"),
+      component: () => import("../views/guide/GuideView.vue"),
     },
     {
       path: "/guide/how-to-connect",
       name: "how-to-connect",
-      component: () => import("../views/GuideConnectView.vue"),
+      component: () => import("../views/guide/GuideConnectView.vue"),
     },
     {
       path: "/guide/how-to-disconnect",
       name: "how-to-disconnect",
-      component: () => import("../views/GuideDisconnectView.vue"),
+      component: () => import("../views/guide/GuideDisconnectView.vue"),
     },
     {
       path: "/guide/how-to-message-one-device",
       name: "how-to-message-one-device",
-      component: () => import("../views/GuideMessageOneView.vue"),
+      component: () => import("../views/guide/GuideMessageOneView.vue"),
     },
     {
       path: "/guide/how-to-disable-notifications",
       name: "how-to-disable-notifications",
-      component: () => import("../views/GuideNotificationsView.vue"),
+      component: () => import("../views/guide/GuideNotificationsView.vue"),
     },
     {
       path: "/guide/how-to-disable-battery-optimization",
       name: "how-to-disable-battery-optimization",
-      component: () => import("../views/GuideBatteryOptimization.vue"),
+      component: () => import("../views/guide/GuideBatteryOptimization.vue"),
     },
     {
       path: "/faq",
       name: "faq",
       component: () => import("../views/FAQView.vue"),
     },
-    {
-      path: "/legal",
-      name: "legal",
-      component: () => import("../views/LegalView.vue"),
-    },
 
 
     {
       path: "/privacy",
       name: "privacy",
-      component: () => import("../views/PrivacyAppView.vue"),
+      component: () => import("../views/legal/PrivacyAppView.vue"),
     },
 
-    { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import("../views/404View.vue") },
+    { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import("../views/other/404View.vue") },
     // if you omit the last `*`, the `/` character in params will be encoded when resolving or pushing
-    { path: '/:pathMatch(.*)', name: 'bad-not-found', component: () => import("../views/404View.vue") },
+    { path: '/:pathMatch(.*)', name: 'bad-not-found', component: () => import("../views/other/404View.vue") },
 
   ],
   scrollBehavior () {

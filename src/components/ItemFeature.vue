@@ -7,7 +7,7 @@
       <h3>
         <slot name="heading"></slot>
       </h3>
-      <slot></slot>
+      <p><slot></slot></p>
     </div>
   </div>
 </template>
@@ -18,6 +18,7 @@
   display: flex;
   flex-direction: row;
 } */
+
 
 /* .details {
   flex: 1;
@@ -61,13 +62,38 @@ h3 {
   font-weight: 500;
   margin-bottom: 0.4rem;
 }
+@media (max-width: 1024px) {
+  .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  i {
+    margin-bottom: 0.4rem;
+  }
+}
 
 @media (min-width: 1024px) {
   i {
     width: 50px;
     height: 50px;
   }
+
+  .details {
+    flex: 1;
+    margin-left: 1rem;
 }
+}
+
+
+
 .item {
   margin-top: 0;
   /* padding: 0.4rem 0 1rem calc(var(--section-gap) / 2); */
