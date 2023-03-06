@@ -77,7 +77,7 @@ const router = createRouter({
     {
       path: "/privacy",
       name: "privacy",
-      component: () => import("../views/PrivacyView.vue"),
+      component: () => import("../views/PrivacyAppView.vue"),
     },
 
     { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import("../views/404View.vue") },
