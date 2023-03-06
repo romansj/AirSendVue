@@ -1,6 +1,5 @@
 <script setup>
 import { Head } from "@vueuse/head";
-import ItemSummaryDetails from "../components/ItemSummaryDetails.vue";
 </script>
 
 <template>

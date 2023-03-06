@@ -1,20 +1,19 @@
 <script setup>
 import { Head } from '@vueuse/head'
-import ItemSummaryDetails from '../components/ItemSummaryDetails.vue';
 
 </script>
 
 <template>
   <Head>
-    <title>How can I send a message to only one device? | AirSend</title>
-    <meta name="title" content="How can I send a message to only one device? | AirSend" />
+    <title>How to disconnect a device? | AirSend</title>
+    <meta name="title" content="How to disconnect a device? | AirSend" />
     <meta
       name="description"
-      content="Guide how to send a message to only one device in AirSend."
+      content="Guide how to disconnect a device in AirSend app."
     />
     <meta
       name="keywords"
-      content="guide, airsend, airsend guide, message device"
+      content="guide, airsend, airsend guide, disconnect, disconnect device"
     />
   </Head>
 
@@ -65,39 +64,35 @@ width: 20rem;
 <script>
 
 
-let howToMessageOneDevice =
+
+let howToDisconnect =
   `
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How can I send a message to only one device?",
+  "name": "How to disconnect a device?",
   "step": [
     {
       "@type": "HowToStep",
-      "text": "Go to Messages page",
-      "image": "/message_one_device/0_messages_page.jpg"
+      "text": "Go to Connections page",
+      "image": "/modify_notifications/section_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "Under 'Select recipient' tap the selection box and pick 'Selected devices'",
-      "image": "/message_one_device/2_recipient_choice_selected.jpg"
+      "text": "Long tap on the device",
+      "image": "/modify_notifications/2_notification_settings.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "In the dialog that appears select one or many devices you would like to message. Tap 'Confirm' after you're done selecting",
-      "image": "/message_one_device/4_dialog_recipient_choice_checked.jpg"
-    },
-    {
-      "@type": "HowToStep",
-      "text": "Write and send your message",
-      "image": "/message_one_device/5_message_typed.jpg"
+      "text": "In the menu that appears tap Disconnect",
+      "image": "/modify_notifications/3_notification_toggled.jpg"
     }
   ]
-}
+}  
 `
 
 
-let arr = [JSON.parse(howToMessageOneDevice)]
+let arr = [JSON.parse(howToDisconnect)]
 
 export default {
   data() {

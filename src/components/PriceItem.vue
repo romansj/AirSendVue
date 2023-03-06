@@ -4,15 +4,17 @@
       <slot name="icon"></slot>
     </i>
     <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
+      <p class="item_heading"><strong>
+          <slot name="heading"></slot>
+        </strong>
+      </p>
 
       <p>
         <slot name="price"></slot>
       </p>
 
       <p>
+
         <slot name="description"></slot>
       </p>
     </div>
@@ -34,7 +36,7 @@
 
 @media (hover: hover) {
   .item:hover {
-    
+
     /* border: 2px solid var(--color-accent); */
     /* background-color: var(--color-accent); */
   }
@@ -46,5 +48,9 @@
 
 .details {
   flex: 1;
+}
+
+.item_heading{
+  color: var(--color-heading);
 }
 </style>

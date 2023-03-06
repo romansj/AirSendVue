@@ -1,20 +1,19 @@
 <script setup>
 import { Head } from '@vueuse/head'
-import ItemSummaryDetails from '../components/ItemSummaryDetails.vue';
 
 </script>
 
 <template>
   <Head>
-    <title>How to disable AirSend app notifications? | AirSend</title>
-    <meta name="title" content="How to disable AirSend app notifications? | AirSend" />
+    <title>How to connect to a device? | AirSend</title>
+    <meta name="title" content="How to connect to a device? | AirSend" />
     <meta
       name="description"
-      content="Guide how to disable AirSend app notifications"
+      content="Guide how to connect to a device in AirSend app."
     />
     <meta
       name="keywords"
-      content="guide, airsend, airsend guide, notifications, airsend notifications"
+      content="guide, airsend, airsend guide, connect, connect device"
     />
   </Head>
 
@@ -66,34 +65,48 @@ width: 20rem;
 
 
 
-let howToDisableNotifications =
-  `
+let howToConnect = `
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How do I disable notifications on AirSend?",
+  "name": "How to connect to a device",
   "step": [
     {
       "@type": "HowToStep",
-      "text": "Open Settings",
-      "image": "/modify_notifications/section_settings.jpg"
+      "text": "Go to Connections page",
+      "image": "/section_connections.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "Scroll down to Notifications page",
-      "image": "/modify_notifications/2_notification_settings.jpg"
+      "text": "Tap 'Connect'",
+      "image": "/connect_device/2_button_connect.jpg"
     },
     {
       "@type": "HowToStep",
-      "text": "Toggle on/off the type of notifications you would like to receive",
-      "image": "/modify_notifications/3_notification_toggled.jpg"
+      "text": "The connection dialog will be displayed. You can now scan the other device's QR code or enter IP address and port manually",
+      "image": "/connect_device/3_dialog_connect.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "On the second device, go to the Connections page as well and tap on 'This device'",
+      "image": "/connect_device/2_button_connect.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Now on the first device scan the QR code or enter IP adress and port.",
+      "image": "/connect_device/4_scanned_qr.jpg"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "All done, you're connected!",
+      "image": "/device_list.jpg"
     }
   ]
 }
-
 `
 
-let arr = [JSON.parse(howToDisableNotifications)]
+
+let arr = [JSON.parse(howToConnect)]
 
 export default {
   data() {
